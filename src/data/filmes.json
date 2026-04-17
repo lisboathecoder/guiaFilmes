@@ -1,0 +1,53 @@
+[
+  {
+    "id": "f1",
+    "nome": "Interestelar",
+    "descricao": "Uma equipe de astronautas atravessa um buraco de minhoca em busca de um novo lar para a humanidade, enquanto o tempo se torna um inimigo silencioso.",
+    "imagem": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    "ano": "2014",
+    "genero": "Ficcao cientifica",
+    "direcao": "Christopher Nolan",
+    "duracao": "2h 49min"
+  },
+  {
+    "id": "f2",
+    "nome": "Mad Max: Estrada da Furia",
+    "descricao": "Em um mundo pos-apocaliptico, Max se une a Furiosa para escapar de um tirano e atravessar um deserto brutal em uma corrida intensa por liberdade.",
+    "imagem": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+    "ano": "2015",
+    "genero": "Acao",
+    "direcao": "George Miller",
+    "duracao": "2h 0min"
+  },
+  {
+    "id": "f3",
+    "nome": "Parasita",
+    "descricao": "Uma familia em dificuldades financeiras se infiltra na casa de uma familia rica, desencadeando uma cadeia de eventos inesperados e tensos.",
+    "imagem": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    "ano": "2019",
+    "genero": "Thriller",
+    "direcao": "Bong Joon-ho",
+    "imagem_direcao": "Bong Joon-ho",
+    "duracao": "2h 12min"
+  },
+  {
+    "id": "f4",
+    "nome": "Duna",
+    "descricao": "Paul Atreides parte para o planeta mais perigoso do universo e precisa aceitar seu destino para proteger seu povo e o futuro da galaxia.",
+    "imagem": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+    "ano": "2021",
+    "genero": "Aventura",
+    "direcao": "Denis Villeneuve",
+    "duracao": "2h 35min"
+  },
+  {
+    "id": "f5",
+    "nome": "Homem-Aranha no Aranhaverso",
+    "descricao": "Miles Morales descobre um multiverso de herois-aranha e precisa aprender a ser o proprio heroi para salvar todas as realidades.",
+    "imagem": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+    "ano": "2018",
+    "genero": "Animacao",
+    "direcao": "Bob Persichetti",
+    "duracao": "1h 57min"
+  }
+]

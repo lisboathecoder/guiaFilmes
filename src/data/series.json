@@ -1,0 +1,52 @@
+[
+  {
+    "id": "s1",
+    "nome": "Stranger Things",
+    "descricao": "Um grupo de amigos enfrenta eventos sobrenaturais em uma pequena cidade, enquanto experimentos secretos e uma dimensao sombria ameacam a regiao.",
+    "imagem": "https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
+    "ano": "2016",
+    "genero": "Ficcao",
+    "direcao": "Irmaos Duffer",
+    "duracao": "4 temporadas"
+  },
+  {
+    "id": "s2",
+    "nome": "Breaking Bad",
+    "descricao": "Um professor de quimica recebe um diagnostico terminal e decide fabricar metanfetamina para garantir o futuro financeiro da familia.",
+    "imagem": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+    "ano": "2008",
+    "genero": "Drama",
+    "direcao": "Vince Gilligan",
+    "duracao": "5 temporadas"
+  },
+  {
+    "id": "s3",
+    "nome": "The Bear",
+    "descricao": "Um jovem chef retorna para comandar o restaurante da familia em Chicago e precisa equilibrar caos, luto e excelencia na cozinha.",
+    "imagem": "https://image.tmdb.org/t/p/w500/sHFlbKS3WLqMnp9t2ghADIJFnuQ.jpg",
+    "ano": "2022",
+    "genero": "Comedia dramatica",
+    "direcao": "Christopher Storer",
+    "duracao": "3 temporadas"
+  },
+  {
+    "id": "s4",
+    "nome": "Dark",
+    "descricao": "O desaparecimento de uma crianca revela uma rede de viagens no tempo e segredos familiares que atravessam geracoes em uma cidade alema.",
+    "imagem": "https://image.tmdb.org/t/p/w500/5LoMzU4nDa0P5U6hZzdH3G7c7mJ.jpg",
+    "ano": "2017",
+    "genero": "Misterio",
+    "direcao": "Baran bo Odar",
+    "duracao": "3 temporadas"
+  },
+  {
+    "id": "s5",
+    "nome": "Arcane",
+    "descricao": "Duas irmas se veem em lados opostos de um conflito entre cidades rivais, em uma historia de tecnologia, politica e identidade.",
+    "imagem": "https://image.tmdb.org/t/p/w500/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+    "ano": "2021",
+    "genero": "Animacao",
+    "direcao": "Christian Linke",
+    "duracao": "2 temporadas"
+  }
+]
