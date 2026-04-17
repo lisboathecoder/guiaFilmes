@@ -43,7 +43,7 @@ function CustomDrawerContent(props) {
 			style={styles.drawerScroll}
 			contentContainerStyle={styles.drawerContent}
 		>
-			<Text style={styles.brand}>THE CURATOR</Text>
+			<Text style={styles.brand}>CINEMATCH</Text>
 			<DrawerItemList {...props} />
 
 			<View style={styles.drawerFooter}>
@@ -51,7 +51,7 @@ function CustomDrawerContent(props) {
 					<MaterialIcons name="person" size={18} color={colors.onSurfaceVariant} />
 				</View>
 				<View>
-					<Text style={styles.footerName}>Guest Curator</Text>
+					<Text style={styles.footerName}>VISITANTE</Text>
 					<Text style={styles.footerRole}>VIEW PROFILE</Text>
 				</View>
 			</View>

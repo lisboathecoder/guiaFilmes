@@ -2,6 +2,14 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { StyleSheet, Text, View } from 'react-native';
 import TabBar from './TabBar';
 
+const colors = {
+	background: '#131313',
+	surfaceContainerLow: '#1c1b1b',
+	outlineVariant: '#4e4633',
+	onSurface: '#e5e2e1',
+	primaryContainer: '#f5c518',
+};
+
 const Drawer = createDrawerNavigator();
 
 function Sobre() {
@@ -32,13 +40,13 @@ export default function Menu() {
 		<Drawer.Navigator
 			initialRouteName="Inicio"
 			screenOptions={{
-				headerStyle: { backgroundColor: '#1e40af' },
+				headerStyle: { backgroundColor: colors.primaryContainer },
 				headerTintColor: '#ffffff',
 				headerTitleStyle: { fontWeight: 'bold' },
-				drawerActiveTintColor: '#1e40af',
-				drawerActiveBackgroundColor: '#dbeafe',
-				drawerInactiveTintColor: '#1e3a8a',
-				drawerStyle: { backgroundColor: '#f8fafc', width: 260 },
+				drawerActiveTintColor: colors.primaryContainer,
+				drawerActiveBackgroundColor: colors.surfaceContainerLow,
+				drawerInactiveTintColor: colors.onSurface,
+				drawerStyle: { backgroundColor: colors.background, width: 260 },
 			}}
 		>
 			<Drawer.Screen name="Inicio" component={TabBar} options={{ title: 'Guia Digital' }} />
@@ -51,18 +59,18 @@ export default function Menu() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#f0f4ff',
+		backgroundColor: colors.background,
 		padding: 20,
 		gap: 10,
 	},
 	title: {
 		fontSize: 28,
 		fontWeight: 'bold',
-		color: '#1e40af',
+		color: colors.primaryContainer,
 	},
 	text: {
 		fontSize: 16,
 		lineHeight: 24,
-		color: '#334155',
+		color: colors.onSurface,
 	},
 });

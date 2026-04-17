@@ -23,7 +23,13 @@ export default function Detalhe({ route }) {
 
 	return (
 		<ScrollView style={styles.container} contentContainerStyle={styles.content}>
-			<Image source={{ uri: item.imagem }} style={styles.banner} />
+			{item.imagem ? (
+				<Image source={{ uri: item.imagem }} style={styles.banner} />
+			) : (
+				<View style={styles.semImagem}>
+					<Text style={styles.semImagemText}>Sem imagem</Text>
+				</View>
+			)}
 
 			<Text style={styles.categoria}>{categoria.toUpperCase()}</Text>
 			<Text style={styles.titulo}>{item.nome}</Text>
@@ -39,8 +45,13 @@ export default function Detalhe({ route }) {
 			<Text style={styles.subtitulo}>Direcao</Text>
 			<Text style={styles.texto}>{item.direcao}</Text>
 
+			<Text style={styles.subtitulo}>Principais atores</Text>
+			<Text style={styles.texto}>
+				{(item.atoresPrincipais || []).join(', ') || 'Nao informado'}
+			</Text>
+
 			<Text style={styles.subtitulo}>Duracao</Text>
-			<Text style={styles.texto}>{item.duracao}</Text>
+			<Text style={styles.texto}>{item.duracao || 'Nao informado'}</Text>
 		</ScrollView>
 	);
 }
@@ -59,6 +70,22 @@ const styles = StyleSheet.create({
 		height: 420,
 		borderRadius: 12,
 		marginBottom: 12,
+	},
+	semImagem: {
+		width: '100%',
+		height: 420,
+		borderRadius: 12,
+		marginBottom: 12,
+		backgroundColor: colors.surfaceContainerLow,
+		borderWidth: 1,
+		borderColor: colors.outlineVariant,
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	semImagemText: {
+		fontSize: 14,
+		fontWeight: '600',
+		color: colors.onSurface,
 	},
 	categoria: {
 		fontSize: 12,
