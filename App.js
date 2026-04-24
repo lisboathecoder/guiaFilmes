@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { DarkTheme, NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import {
 	createDrawerNavigator,
 	DrawerContentScrollView,
@@ -23,18 +23,6 @@ const colors = {
 };
 
 const Drawer = createDrawerNavigator();
-
-const navTheme = {
-	...DarkTheme,
-	colors: {
-		...DarkTheme.colors,
-		background: colors.background,
-		card: colors.surfaceContainerLow,
-		border: colors.outlineVariant,
-		text: colors.onSurface,
-		primary: colors.primaryContainer,
-	},
-};
 
 function CustomDrawerContent(props) {
 	return (
@@ -60,32 +48,46 @@ function CustomDrawerContent(props) {
 }
 
 function Sobre() {
-	return (
-		<View style={styles.containerScreen}>
-			<Text style={styles.title}>SOBRE</Text>
-			<Text style={styles.text}>
-				Guia digital de filmes e series feito com React Native.
-			</Text>
-			<Text style={styles.text}>
-				Navegue pelas abas para ver listas e toque em um item para abrir detalhes.
-			</Text>
-		</View>
-	);
+  return (
+	<View style={styles.container}>
+	  <Text style={styles.title}>Sobre</Text>
+	  <Text style={styles.text}>
+		Guia digital de filmes e series feito com React Native.
+	  </Text>
+	  <Text style={styles.text}>
+		Navegue pelas abas para ver listas e toque em um item para abrir
+		detalhes.
+	  </Text>
+	  <Text style={styles.text}>
+		Utilizamos a api do TMDB para obter as informações de filmes e series, incluindo sinopse, elenco, genero e diretor.
+	  </Text>
+	
+	</View>
+  );
 }
 
 function Creditos() {
-	return (
-		<View style={styles.containerScreen}>
-			<Text style={styles.title}>CREDITOS</Text>
-			<Text style={styles.text}>Projeto desenvolvido com Expo e React Navigation.</Text>
-		</View>
-	);
+  return (
+	<View style={styles.container}>
+	  <Text style={styles.title}>Creditos</Text>
+	  <Text style={styles.text}>
+		Projeto desenvolvido com Expo e React Navigation.
+	  </Text>   
+	  <Text style={styles.text}>
+		SENAI.
+	  </Text>        
+	  <Text style={styles.text}>
+	   Fabio Henrique
+	   Gustavo Teixeira Lisboa
+	  </Text>
+	</View>
+  );
 }
 
 export default function App() {
 	return (
 		<GestureHandlerRootView style={{ flex: 1 }}>
-			<NavigationContainer theme={navTheme}>
+			<NavigationContainer>
 				<StatusBar style="light" />
 				<Drawer.Navigator
 					drawerContent={(props) => <CustomDrawerContent {...props} />}
@@ -119,7 +121,7 @@ export default function App() {
 						name="Inicio"
 						component={TabBar}
 						options={{
-							title: 'CINEMA',
+							title: 'CINEMATCH',
 							drawerIcon: ({ color, size }) => (
 								<MaterialIcons name="home" color={color} size={size} />
 							),
